@@ -1,9 +1,9 @@
 import React from "react"
 import { Link } from "gatsby"
 
-import Layout from "../components/layout"
-import Image from "../components/image"
-import SEO from "../components/seo"
+import Layout from "../hoc/Layout/Layout"
+// import Image from "../components/image"
+// import SEO from "../hoc/Seo/Seo"
 
 // Importing styles
 import "./index.scss"
@@ -12,15 +12,14 @@ interface indexProps {}
 
 const IndexPage: React.FC<indexProps> = () => (
   <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link> <br />
-    <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
+    {/* Hero */}
+    {/* ABOUT ME */}
+    {/* MyLife */}
+    {/* MyStack */}
+    {/* MyProjects */}
+    {/* Contacts&Socials */}
+    {/* <Link to="/page-2/">Go to page 2</Link> <br /> */}
+    {/* <Link to="/using-typescript/">Go to "Using TypeScript"</Link> */}
   </Layout>
 )
 
