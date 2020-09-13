@@ -1,5 +1,5 @@
 @import "../styles/abstract/variables";
-// @import "./styles/base/typography";
+@import "../styles/base/typography";
 // @import "./styles/reset/reset";
 
 // * ====== UNIVERSAL PROPERTIES ======
@@ -9,6 +9,7 @@ html {
 
 body {
   box-sizing: border-box;
+  background-color: $color-bg;
 }
 
 main {
