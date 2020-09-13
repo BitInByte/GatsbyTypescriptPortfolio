@@ -3,7 +3,7 @@ import { PageProps } from "gatsby"
 
 // Import components
 import SEO from "../../hoc/Seo/Seo"
-import NavBar from "../../components/NavBar/NavBar"
+import NavBar from "../../containers/NavBar/NavBar"
 
 // Import classes
 import classes from "./Layout.module.scss"
