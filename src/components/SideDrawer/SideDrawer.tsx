@@ -10,17 +10,18 @@ import classes from "./SideDrawer.module.scss"
 //Props interface
 interface sideDrawerProps {
   show: boolean
+  clickHandler: () => void
 }
 
 //Stateless component
-const sideDrawer: React.FC<sideDrawerProps> = ({ show }) => {
+const sideDrawer: React.FC<sideDrawerProps> = ({ show, clickHandler }) => {
   let drawerClasses = [classes.SideDrawer]
 
   if (show) drawerClasses = [classes.SideDrawer, classes.SideDrawerOpen]
 
   return (
     <div className={drawerClasses.join(" ")}>
-      <NavItems isSideDrawerOpen />
+      <NavItems isSideDrawerOpen clickHandler={clickHandler} />
     </div>
   )
 }

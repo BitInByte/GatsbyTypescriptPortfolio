@@ -32,7 +32,7 @@ const navBar: React.FC<navbarProps> = () => {
   return (
     <div className={classes.NavBar}>
       {backDrop}
-      <SideDrawer show={sideBarOpen} />
+      <SideDrawer show={sideBarOpen} clickHandler={backDropHandler} />
       {/* Signature */}
       <Signature />
       {/* Menu */}
