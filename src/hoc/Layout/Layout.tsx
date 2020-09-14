@@ -1,5 +1,5 @@
 import React from "react"
-import { PageProps } from "gatsby"
+// import { PageProps } from "gatsby"
 
 // Import components
 import SEO from "../../hoc/Seo/Seo"
@@ -10,7 +10,7 @@ import classes from "./Layout.module.scss"
 
 interface layoutProps {}
 
-const Layout: React.FC<PageProps<layoutProps>> = ({ children }) => {
+const Layout: React.FC = ({ children }) => {
   return (
     <>
       <SEO />

@@ -1,12 +1,8 @@
-// Font imports
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap");
+@import "../../../../../styles/abstract/variables";
 
-// Sass imports
-@import "../abstract/variables";
-
-body {
+.h2 {
+  color: $color-white;
+  font-size: 4rem;
   font-family: "Montserrat", sans-serif;
-  font-weight: 400;
-  line-height: 2.1rem;
-  font-size: 1.6rem;
 }

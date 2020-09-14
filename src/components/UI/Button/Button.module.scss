@@ -1,0 +1,37 @@
+@import "../../../styles/abstract/variables";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap");
+
+.Button {
+  &,
+  &:link,
+  &:visited {
+    text-transform: uppercase;
+    background-color: $color-button;
+    color: $color-white;
+    font-size: 1.3rem;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    border: 0;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+    transform: scale(1);
+    box-shadow: 0px 0px 16px 1px rgba($color: $color-button, $alpha: 0.75);
+    // border: 0.3rem solid transparent;
+  }
+
+  &:hover {
+    transform: scale(1.1);
+  }
+
+  &:active {
+    outline: none;
+    transform: scale(0.9);
+  }
+
+  //   &:focus {
+  //     outline: none;
+  //     border: 0.3rem solid $color-white;
+  //   }
+}
