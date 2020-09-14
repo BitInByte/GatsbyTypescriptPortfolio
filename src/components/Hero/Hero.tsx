@@ -1,6 +1,7 @@
 //Import libraries
 import React from "react"
 import { useSpring, animated, config } from "react-spring"
+import { Link } from "react-scroll"
 
 //Import components
 import Button from "../UI/Button/Button"
@@ -96,13 +97,15 @@ const hero: React.FC<Props> = props => {
       <H2>
         My name is <Marker>João Pedro</Marker>
       </H2>
-      <p>
+      <div>
         And I am a{" "}
         <span className={classes.Hero__typewriter}>
           <TypewritingStrings text={strings} />
         </span>
-      </p>
-      <Button text="Do you wanna discover more about me?" />
+      </div>
+      <Link to="about" spy={true} smooth={true}>
+        <Button text="Do you wanna discover more about me?" />
+      </Link>
       {/* Button => Do you wanna know more about me? */}
     </animated.div>
   )

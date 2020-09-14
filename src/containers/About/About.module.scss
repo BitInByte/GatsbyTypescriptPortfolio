@@ -1,0 +1,15 @@
+@import "../../styles/abstract/variables";
+
+.About {
+  //   margin-top: 8rem;
+  max-width: 124rem;
+  height: 100%;
+
+  &__content {
+    width: 100%;
+    color: $color-white;
+    font-size: 1.8rem;
+    text-align: center;
+    padding: 2rem 10rem;
+  }
+}

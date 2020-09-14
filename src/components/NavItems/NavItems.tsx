@@ -19,12 +19,12 @@ const Links = [
     link: "life",
   },
   {
-    text: "My Stack",
-    link: "stack",
-  },
-  {
     text: "My Projects",
     link: "projects",
+  },
+  {
+    text: "My Stack",
+    link: "stack",
   },
   {
     text: "Contacts",
