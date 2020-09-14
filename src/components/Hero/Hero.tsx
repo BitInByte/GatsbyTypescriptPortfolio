@@ -1,6 +1,6 @@
 //Import libraries
 import React from "react"
-import { useSpring, animated, config } from "react-spring"
+// import { useSpring, animated, config } from "react-spring"
 
 //Import components
 import Button from "../UI/Button/Button"
@@ -8,9 +8,17 @@ import H1 from "../UI/Typography/Headings/Heading1/Heading1"
 import H2 from "../UI/Typography/Headings/Heading2/Heading2"
 import Marker from "../UI/Typography/Marker/Marker"
 import HeroEmoji from "../UI/Emoji/HeroEmoji"
+import TypewritingStrings from "./TypewritingStrings/TypewritingStrings"
 
 //Import scoped class modules
 import classes from "./Hero.module.scss"
+
+const strings = [
+  "software engineer student",
+  "front-end self-taught",
+  "electronic enthusiastic",
+  "eSports lover",
+]
 
 //Props interface
 interface Props {}
@@ -79,7 +87,12 @@ const hero: React.FC<Props> = props => {
       <H2>
         My name is <Marker>João Pedro</Marker>
       </H2>
-      <p>And I am a...</p>
+      <p>
+        And I am a{" "}
+        <span className={classes.Hero__typewriter}>
+          <TypewritingStrings text={strings} />
+        </span>
+      </p>
       <Button text="Do you wanna discover more about me?" />
       {/* Button => Do you wanna know more about me? */}
     </div>
