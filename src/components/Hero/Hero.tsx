@@ -1,6 +1,6 @@
 //Import libraries
 import React from "react"
-// import { useSpring, animated, config } from "react-spring"
+import { useSpring, animated, config } from "react-spring"
 
 //Import components
 import Button from "../UI/Button/Button"
@@ -25,6 +25,15 @@ interface Props {}
 
 //Stateless component
 const hero: React.FC<Props> = props => {
+  const Props = useSpring({
+    from: { opacity: 0, transform: "translateY(-30px)" },
+    to: { opacity: 1, transform: "translateY(0)" },
+    config: {
+      ...config.wobbly,
+      duration: 600,
+    },
+  })
+
   //   const { x } = useSpring({
   //     from: { x: [0] },
   //     x: on ? 1 : 0,
@@ -40,7 +49,7 @@ const hero: React.FC<Props> = props => {
   //   })
 
   return (
-    <div className={classes.Hero}>
+    <animated.div style={Props} className={classes.Hero}>
       <H1>
         Hello, <HeroEmoji label="Hand">🖐🏼</HeroEmoji>
         {/* Hello,{" "} */}
@@ -95,7 +104,7 @@ const hero: React.FC<Props> = props => {
       </p>
       <Button text="Do you wanna discover more about me?" />
       {/* Button => Do you wanna know more about me? */}
-    </div>
+    </animated.div>
   )
 }
 
