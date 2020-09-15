@@ -12,6 +12,7 @@ import HeroEmoji from "../UI/Emoji/HeroEmoji"
 import TypewritingStrings from "./TypewritingStrings/TypewritingStrings"
 
 //Import scoped class modules
+//@ts-ignore
 import classes from "./Hero.module.scss"
 
 const strings = [

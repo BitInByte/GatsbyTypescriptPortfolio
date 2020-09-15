@@ -4,6 +4,7 @@ import { Link } from "gatsby"
 import Layout from "../hoc/Layout/Layout"
 import Hero from "../components/Hero/Hero"
 import About from "../containers/About/About"
+import MyLife from "../containers/MyLife/MyLife"
 // import Image from "../components/image"
 // import SEO from "../hoc/Seo/Seo"
 
@@ -23,6 +24,9 @@ const IndexPage: React.FC<indexProps> = () => (
       <About />
     </section>
     {/* MyLife */}
+    <section id="mylife">
+      <MyLife />
+    </section>
     {/* MyStack */}
     {/* MyProjects */}
     {/* Contacts&Socials */}

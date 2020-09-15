@@ -17,7 +17,7 @@ const Links = [
   },
   {
     text: "My Life",
-    link: "life",
+    link: "mylife",
   },
   {
     text: "My Projects",

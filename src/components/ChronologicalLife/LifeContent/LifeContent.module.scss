@@ -1,0 +1,31 @@
+@import "../../../styles/abstract/variables";
+
+.LifeContent {
+  width: 100%;
+  text-align: center;
+  padding: 3rem;
+  color: $color-white;
+  font-size: 1.6rem;
+
+  h3 {
+    font-size: 2.5rem;
+    color: $color-font-secondary;
+  }
+
+  div {
+    strong {
+      color: $color-font-secondary;
+    }
+
+    a {
+      text-decoration: underline;
+      color: $color-white;
+
+      transition: color 0.3s ease-in;
+
+      &:hover {
+        color: $color-font-secondary;
+      }
+    }
+  }
+}
