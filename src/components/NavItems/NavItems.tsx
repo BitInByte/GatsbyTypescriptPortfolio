@@ -7,6 +7,7 @@ import { useSpring, animated, config } from "react-spring"
 import NavItem from "./NavItem/NavItem"
 
 // Import classes
+//@ts-ignore
 import classes from "./NavItems.module.scss"
 
 const Links = [

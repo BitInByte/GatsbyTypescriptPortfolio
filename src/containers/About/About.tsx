@@ -4,9 +4,11 @@ import { graphql, useStaticQuery } from "gatsby"
 
 //Import components
 import Title from "../../components/UI/Typography/Title/Title"
-import Marker from "../../components/UI/Typography/Marker/Marker"
+// import Marker from "../../components/UI/Typography/Marker/Marker"
+import Button from "../../components/UI/Button/Button"
 
 //Import scoped class modules
+//@ts-ignore
 import classes from "./About.module.scss"
 
 // Query
@@ -60,6 +62,7 @@ const About: React.FC<Props> = () => {
       >
         {/* {data.allMarkdownRemark.edges[0].node.html} */}
       </div>
+      <Button text="Resume" />
     </div>
   )
 }

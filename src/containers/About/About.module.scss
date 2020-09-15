@@ -4,6 +4,8 @@
   //   margin-top: 8rem;
   max-width: 124rem;
   height: 100%;
+  text-align: center;
+  padding: 3rem 0;
 
   &__content {
     width: 100%;
@@ -11,5 +13,11 @@
     font-size: 1.8rem;
     text-align: center;
     padding: 2rem 10rem;
+
+    margin-bottom: 2rem;
+
+    & strong {
+      color: $color-font-secondary;
+    }
   }
 }
