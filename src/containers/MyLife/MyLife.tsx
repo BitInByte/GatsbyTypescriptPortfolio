@@ -11,15 +11,18 @@ import LifeContent from "../../components/ChronologicalLife/LifeContent/LifeCont
 //@ts-ignore
 import classes from "./MyLife.module.scss"
 
+// Types
+import { auxObjType } from "../../types"
+
 // const Years = ["1998", "2000", "2003", "2006", "2011", "2015"]
 // const Years = ["1998", "2000", "2003", "2006", "2011", "2015"]
 
 // Types
 type yearState = null | string
-type auxObjType = {
-  date: string
-  html: string
-} | null
+// type auxObjType = {
+//   date: string
+//   html: string
+// } | null
 
 type dataBlockType = {
   node: { frontmatter: { date: number }; html: string }

@@ -8,16 +8,19 @@ import { useSpring, animated, config } from "react-spring"
 //@ts-ignore
 import classes from "./LifeContent.module.scss"
 
+// Import Types
+import { auxObjType } from "../../../types"
+
 //Props interface
 interface Props {
   yearData: auxObjType
 }
 
 // Types
-type auxObjType = {
-  date: string
-  html: string
-} | null
+// type auxObjType = {
+//   date: string
+//   html: string
+// } | null
 
 //Stateless component
 const LifeContent: React.FC<Props> = ({ yearData }) => {

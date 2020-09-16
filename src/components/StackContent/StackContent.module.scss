@@ -1,0 +1,66 @@
+@import "../../styles/abstract/variables";
+@import "../../styles/abstract/mixins";
+
+.StackContent {
+  width: 100%;
+  color: $color-white;
+  padding: 3rem 0;
+  text-align: left;
+
+  @include respond(desktop) {
+    padding: 3rem 10rem;
+  }
+
+  & h3 {
+    color: $color-font-secondary;
+    font-weight: 700;
+    font-size: 2rem;
+  }
+
+  & strong {
+    color: $color-font-secondary;
+  }
+
+  & ul {
+    display: flex;
+
+    @include respond(desktop) {
+      display: block;
+    }
+
+    & li {
+      list-style: none;
+      margin: 0 1rem;
+      position: relative;
+
+      &:not(:first-child) {
+        &::before {
+          display: block;
+          content: "-";
+          position: absolute;
+          top: 0;
+          left: -1.25rem;
+        }
+      }
+
+      @include respond(desktop) {
+        &::before {
+          display: block;
+          content: "-";
+          position: absolute;
+          top: 0;
+          left: -1.25rem;
+        }
+      }
+    }
+  }
+
+  & a {
+    color: $color-white;
+    transition: color 0.3s ease-out;
+
+    &:hover {
+      color: $color-font-secondary;
+    }
+  }
+}
