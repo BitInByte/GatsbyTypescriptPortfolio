@@ -4,6 +4,7 @@ import React from "react"
 //Import components
 
 //Import scoped class modules
+//@ts-ignore
 import classes from "./Button.module.scss"
 
 //Props interface
