@@ -46,7 +46,7 @@ const Stack: React.FC<Props> = props => {
 
   return (
     <div className={classes.Stack}>
-      <Title text="Stack" />
+      <Title text="Stack & Teachnologies" />
       <StackContent html={data.allMarkdownRemark.edges[0].node.html} />
     </div>
   )
