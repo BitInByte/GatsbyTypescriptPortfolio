@@ -17,6 +17,7 @@ interface Props {
   projectData: {
     title: string
     sourceLink: string
+    liveLink: string
     image: string
     html: string
   }
@@ -35,7 +36,13 @@ const Project: React.FC<Props> = ({ projectData, changePosition }) => {
     <div className={classes.Project}>
       <div className={imageClass.join(" ")}>
         {/* <Image imagePath="experience.png" /> */}
-        <Image imagePath={projectData.image} />
+        <a
+          href={projectData.liveLink}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Image imagePath={projectData.image} />
+        </a>
       </div>
       <div className={classes.Project__about}>
         <About

@@ -18,6 +18,7 @@ type query = {
         frontmatter: {
           title: string
           sourceLink: string
+          liveLink: string
           image: string
           projectNr: number
         }
@@ -31,6 +32,7 @@ type projects =
   | {
       title: string
       sourceLink: string
+      liveLink: string
       image: string
       html: string
       projectNr: number
@@ -54,6 +56,7 @@ const Projects: React.FC<Props> = props => {
               title
               image
               sourceLink
+              liveLink
               projectNr
             }
             html
@@ -69,6 +72,7 @@ const Projects: React.FC<Props> = props => {
     projectsData.push({
       title: item.node.frontmatter.title,
       sourceLink: item.node.frontmatter.sourceLink,
+      liveLink: item.node.frontmatter.liveLink,
       image: item.node.frontmatter.image,
       html: item.node.html,
       projectNr: item.node.frontmatter.projectNr,
