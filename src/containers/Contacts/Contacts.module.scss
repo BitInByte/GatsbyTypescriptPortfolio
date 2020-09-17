@@ -1,0 +1,27 @@
+@import "../../styles/abstract/variables";
+
+.Contacts {
+  width: 80rem;
+  text-align: center;
+  padding: 3rem 0;
+  font-size: 1.8rem;
+
+  &__content {
+    padding: 3rem 0;
+
+    & a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    & p {
+      color: $color-white;
+      // line-height: 4.5rem;
+
+      & strong {
+        color: $color-font-secondary;
+        font-weight: 700;
+      }
+    }
+  }
+}

@@ -6,6 +6,7 @@ import SEO from "../../hoc/Seo/Seo"
 import NavBar from "../../containers/NavBar/NavBar"
 
 // Import classes
+//@ts-ignore
 import classes from "./Layout.module.scss"
 
 interface layoutProps {}

@@ -7,6 +7,7 @@ import About from "../containers/About/About"
 import MyLife from "../containers/MyLife/MyLife"
 import Projects from "../containers/Projects/Projects"
 import Stack from "../containers/Stack/Stack"
+import Contacts from "../containers/Contacts/Contacts"
 // import Image from "../components/image"
 // import SEO from "../hoc/Seo/Seo"
 
@@ -38,6 +39,9 @@ const IndexPage: React.FC<indexProps> = () => (
       <Stack />
     </section>
     {/* Contacts&Socials */}
+    <section id="contacts">
+      <Contacts />
+    </section>
     {/* <Link to="/page-2/">Go to page 2</Link> <br /> */}
     {/* <Link to="/using-typescript/">Go to "Using TypeScript"</Link> */}
   </Layout>
