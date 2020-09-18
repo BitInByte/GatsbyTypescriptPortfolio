@@ -8,6 +8,7 @@ import SideDrawerButton from "../../components/SideDrawer/SideDrawerButton/SideD
 import BackDrop from "../../components/UI/BackDrop/BackDrop"
 import SideDrawer from "../../components/SideDrawer/SideDrawer"
 
+//@ts-ignore
 import classes from "./NavBar.module.scss"
 
 interface navbarProps {}

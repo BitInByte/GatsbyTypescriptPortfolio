@@ -1,0 +1,33 @@
+@import "../../styles/abstract/variables";
+// @import "../../styles/base/animations";
+
+.Footer {
+  width: 100vw;
+  height: 100%;
+  padding: 5rem;
+  background-color: $color-nav-bg;
+  border-radius: 2rem 2rem 0 0;
+  position: relative;
+  z-index: 1;
+  transform-style: preserve-3d;
+  text-align: center !important;
+
+  color: rgba($color: $color-white, $alpha: 0.65);
+
+  & ul {
+    width: auto;
+    border-bottom: 0.2rem solid rgba($color: $color-white, $alpha: 0.65);
+    margin-bottom: 1.5rem;
+    & li {
+      font-size: 1.4rem;
+      &::after,
+      &::before {
+        display: none !important;
+      }
+    }
+  }
+
+  & p {
+    margin-top: 1.5rem;
+  }
+}

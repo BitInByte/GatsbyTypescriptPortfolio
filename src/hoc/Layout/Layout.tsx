@@ -4,6 +4,7 @@ import React from "react"
 // Import components
 import SEO from "../../hoc/Seo/Seo"
 import NavBar from "../../containers/NavBar/NavBar"
+import Footer from "../../components/Footer/Footer"
 
 // Import classes
 //@ts-ignore
@@ -22,7 +23,9 @@ const Layout: React.FC = ({ children }) => {
       {/* NORMAL CONTENT */}
       <main>{children}</main>
       {/* FOOTER */}
-      <footer></footer>
+      <footer className={classes.Layout__footer}>
+        <Footer />
+      </footer>
     </>
   )
 }

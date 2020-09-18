@@ -15,4 +15,10 @@
   text-decoration: underline;
   font-weight: 600;
   //   align-self: flex-start;
+
+  &__footer {
+    display: inline-block;
+    width: auto;
+    height: auto;
+  }
 }
