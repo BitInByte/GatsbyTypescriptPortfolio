@@ -12,6 +12,7 @@ import Contacts from "../containers/Contacts/Contacts"
 // import SEO from "../hoc/Seo/Seo"
 
 // Importing styles
+// import "./index.scss"
 import "./index.scss"
 
 interface indexProps {}

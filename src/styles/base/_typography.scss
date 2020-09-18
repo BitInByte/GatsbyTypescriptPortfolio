@@ -9,4 +9,13 @@ body {
   font-weight: 400;
   line-height: 2.1rem;
   font-size: 1.6rem;
+  font-weight: normal;
+  word-wrap: break-word;
+  font-kerning: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+p {
+  font-family: inherit;
 }
