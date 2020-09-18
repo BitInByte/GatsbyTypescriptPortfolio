@@ -1,6 +1,8 @@
 //Import libraries
 import React, { useState } from "react"
 import { graphql, useStaticQuery } from "gatsby"
+import VisibilitySensor from "react-visibility-sensor"
+import { Spring } from "react-spring/renderprops"
 
 //Import components
 import Title from "../../components/UI/Typography/Title/Title"
@@ -68,6 +70,10 @@ const MyLife: React.FC<Props> = props => {
 
   console.log(data)
 
+  // const [isVisible, setIsVisible] = useState(false)
+
+  // console.log(isVisible)
+
   const [selectedYear, setSelectedYear] = useState<yearState>(null)
   //   const [yearData, setYearData] = useState(null)
 
@@ -116,6 +122,24 @@ const MyLife: React.FC<Props> = props => {
   }
 
   return (
+    // <>
+    //   <VisibilitySensor partialVisibility>
+    //     {({ isVisible }) => (
+    //       <Spring delay={100} to={{ opacity: isVisible ? 1 : 0 }}>
+    //         {({ opacity }) => (
+    //           <div className={classes.MyLife} style={opacity}>
+    //             <Title text="My Life" />
+    //             <div className={classes.MyLife__lifeWrapper}>
+    //               <ChronologicalLife years={Years} click={yearClickHandler} />
+    //               <div className={classes.MyLife__content}>
+    //                 <LifeContent yearData={auxObj} />
+    //               </div>
+    //             </div>
+    //           </div>
+    //         )}
+    //       </Spring>
+    //     )}
+    //   </VisibilitySensor>
     <div className={classes.MyLife}>
       <Title text="My Life" />
       <div className={classes.MyLife__lifeWrapper}>
@@ -125,6 +149,7 @@ const MyLife: React.FC<Props> = props => {
         </div>
       </div>
     </div>
+    // </>
   )
 }
 

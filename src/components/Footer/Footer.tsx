@@ -15,7 +15,7 @@ interface Props {}
 //Stateless component
 const Footer: React.FC<Props> = props => (
   <div className={classes.Footer}>
-    {/* <NavBar isSideDrawerOpen={false} /> */}
+    <NavBar isSideDrawerOpen={false} />
     <Signature isFooter />
     <p>Developed by &copy; João Pedro</p>
   </div>
