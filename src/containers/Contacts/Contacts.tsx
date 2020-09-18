@@ -1,9 +1,17 @@
 //Import libraries
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import {
+  faTwitterSquare,
+  faInstagramSquare,
+  faGithubSquare,
+  faLinkedin,
+} from "@fortawesome/free-brands-svg-icons"
 
 //Import components
 import Title from "../../components/UI/Typography/Title/Title"
+import SocialButton from "../../components/UI/SocialButton/SocialButton"
 
 //Import scoped class modules
 //@ts-ignore
@@ -49,6 +57,8 @@ const Contacts: React.FC<Props> = props => {
     `
   )
 
+  console.log(site.siteMetadata.social)
+
   return (
     <div className={classes.Contacts}>
       <Title text="Contacts & Socials" />
@@ -64,6 +74,83 @@ const Contacts: React.FC<Props> = props => {
             </a>
           </strong>
         </p>
+      </div>
+      <div className={classes.Contacts__social}>
+        <a
+          href={site.siteMetadata.social.twitter}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <SocialButton>
+            <FontAwesomeIcon
+              icon={faTwitterSquare}
+              className={[
+                classes.Contacts__icon,
+                classes.Contacts__icon_twitter,
+              ].join(" ")}
+            />
+          </SocialButton>
+        </a>
+        <a
+          href={site.siteMetadata.social.instagram}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <SocialButton>
+            <FontAwesomeIcon
+              icon={faInstagramSquare}
+              className={[
+                classes.Contacts__icon,
+                classes.Contacts__icon_instagram,
+              ].join(" ")}
+            />
+          </SocialButton>
+        </a>
+        <a
+          href={site.siteMetadata.social.instagram}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <SocialButton>
+            <FontAwesomeIcon
+              icon={faLinkedin}
+              className={[
+                classes.Contacts__icon,
+                classes.Contacts__icon_linkedin,
+              ].join(" ")}
+            />
+          </SocialButton>
+        </a>
+        <a
+          href={site.siteMetadata.social.github0}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <SocialButton>
+            <FontAwesomeIcon
+              icon={faGithubSquare}
+              className={[
+                classes.Contacts__icon,
+                classes.Contacts__icon_github,
+              ].join(" ")}
+            />
+          </SocialButton>
+        </a>
+        <a
+          href={site.siteMetadata.social.github1}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <SocialButton>
+            <FontAwesomeIcon
+              icon={faGithubSquare}
+              className={[
+                classes.Contacts__icon,
+                classes.Contacts__icon_github,
+              ].join(" ")}
+            />
+          </SocialButton>
+        </a>
       </div>
     </div>
   )

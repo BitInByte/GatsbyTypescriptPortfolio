@@ -1,9 +1,14 @@
 @import "../../../styles/abstract/variables";
+@import "../../../styles/abstract/mixins";
 
 .About {
   text-align: left;
   color: $color-white;
   font-size: 1.8rem;
+
+  @include respond(desktop) {
+    text-align: center;
+  }
 
   & h3 {
     color: $color-font-secondary;
