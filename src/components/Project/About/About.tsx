@@ -38,7 +38,12 @@ const About: React.FC<Props> = ({ title, html, sourceLink }) => (
       facilis officiis ducimus reprehenderit? Facere non beatae consectetur
       exercitationem tempora impedit ullam! */}
     </div>
-    <a href={sourceLink} target="_blank" rel="noopener noreferrer">
+    <a
+      href={sourceLink}
+      aria-label="Source code"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
       <Button text="Source" />
     </a>
   </div>

@@ -5,6 +5,7 @@ import { PageProps } from "gatsby"
 //Import components
 
 //Import scoped class modules
+// @ts-ignore
 import classes from "./SideDrawerButton.module.scss"
 
 //Props interface

@@ -38,6 +38,7 @@ const Project: React.FC<Props> = ({ projectData, changePosition }) => {
         {/* <Image imagePath="experience.png" /> */}
         <a
           href={projectData.liveLink}
+          aria-label="Project Image"
           target="_blank"
           rel="noopener noreferrer"
         >

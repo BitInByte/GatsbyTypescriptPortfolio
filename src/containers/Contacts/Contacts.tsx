@@ -78,6 +78,7 @@ const Contacts: React.FC<Props> = props => {
       <div className={classes.Contacts__social}>
         <a
           href={site.siteMetadata.social.twitter}
+          aria-label="Twitter"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -93,6 +94,7 @@ const Contacts: React.FC<Props> = props => {
         </a>
         <a
           href={site.siteMetadata.social.instagram}
+          aria-label="Instagram"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -108,6 +110,7 @@ const Contacts: React.FC<Props> = props => {
         </a>
         <a
           href={site.siteMetadata.social.instagram}
+          aria-label="Linkedin"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -123,6 +126,7 @@ const Contacts: React.FC<Props> = props => {
         </a>
         <a
           href={site.siteMetadata.social.github0}
+          aria-label="Github WebDev account"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -138,6 +142,7 @@ const Contacts: React.FC<Props> = props => {
         </a>
         <a
           href={site.siteMetadata.social.github1}
+          aria-label="Github School account"
           target="_blank"
           rel="noopener noreferrer"
         >
