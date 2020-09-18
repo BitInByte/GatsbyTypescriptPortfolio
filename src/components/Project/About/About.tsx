@@ -19,7 +19,10 @@ interface Props {
 const About: React.FC<Props> = ({ title, html, sourceLink }) => (
   <div className={classes.About}>
     <h3>{title}</h3>
-    <div dangerouslySetInnerHTML={{ __html: html }}>
+    <div
+      className={classes.About__content}
+      dangerouslySetInnerHTML={{ __html: html }}
+    >
       {/* Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo quod
       vero molestiae, iusto odit voluptas placeat, est atque debitis nulla
       doloribus cum maiores neque! Dolorum illum quibusdam assumenda
