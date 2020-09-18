@@ -2,15 +2,15 @@ module.exports = {
   siteMetadata: {
     // title: `Gatsby Default Starter`,
     title: `JoPeCodes | Personal Portfolio`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    description: `My personal porfolio talking a bit about me and all of my projects`,
+    author: `João Pedro`,
     social: {
-      website: "",
+      website: "www.jopecodes.com",
       email: "contact@jopecodes.com",
-      twitter: "",
-      instagram: "",
-      github0: "",
-      github1: "",
+      twitter: "https://twitter.com/BitInByte2",
+      instagram: "https://instagram.com/bitinbyte",
+      github0: "https://github.com/BitInByte",
+      github1: "https://github.com/JayFoxFoxy",
     },
   },
   plugins: [
@@ -34,13 +34,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `JoPeCodes | Personal Portfolio`,
+        short_name: `JoPeCodes`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#181f23`,
+        theme_color: `#181f23`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/assets/images/logo.png`, // This path is relative to the root of the site.
       },
     },
     "gatsby-plugin-sass",
