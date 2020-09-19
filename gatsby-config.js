@@ -1,3 +1,7 @@
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
+
 module.exports = {
   siteMetadata: {
     // title: `Gatsby Default Starter`,
@@ -9,6 +13,7 @@ module.exports = {
       email: "contact@jopecodes.com",
       twitter: "https://twitter.com/BitInByte2",
       instagram: "https://instagram.com/bitinbyte",
+      linkedin: "https://www.linkedin.com/in/jopecodes",
       github0: "https://github.com/BitInByte",
       github1: "https://github.com/JayFoxFoxy",
     },
@@ -46,8 +51,14 @@ module.exports = {
     "gatsby-plugin-sass",
     `gatsby-transformer-remark`,
     `gatsby-plugin-fontawesome-css`,
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: process.env.GA_TRACKING_ID,
+      },
+    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
+    `gatsby-plugin-offline`,
   ],
 }
