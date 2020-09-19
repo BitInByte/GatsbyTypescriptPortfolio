@@ -21,7 +21,6 @@
 
     & p {
       color: $color-white;
-      // line-height: 4.5rem;
 
       & strong {
         color: $color-font-secondary;
@@ -46,23 +45,8 @@
     transition: all 0.2s ease-in;
 
     &:hover {
-      // color: #1da1f2;
       transform: scale(1.05);
     }
-
-    // &::after {
-    //   content: "";
-    //   display: inline-block;
-    //   position: absolute;
-    //   padding: 1.5rem;
-    //   top: 0;
-    //   left: 0;
-    //   width: 4.5rem;
-    //   height: 4.5rem;
-    //   background-color: $color-button;
-    //   transform: scale(1.05) skewX(-1.5deg);
-
-    // }
 
     &_twitter {
       &:hover {

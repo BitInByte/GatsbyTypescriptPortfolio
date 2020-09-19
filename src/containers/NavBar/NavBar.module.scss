@@ -2,18 +2,13 @@
 @import "../../styles/abstract/mixins";
 
 .NavBar {
-  max-width: 124rem;
+  max-width: $width-content;
   color: $color-white;
   height: 100%;
   display: flex;
   flex: 1;
   padding: 2rem;
   align-items: center;
-  // border-radius: 0 0 2rem 2rem;
-  // background-color: red;
-  // flex: 1;
-  // flex-shrink: 0;
-  //   height: 25rem;
 
   &__desktop {
     display: block;

@@ -2,11 +2,8 @@
 
 .Project {
   width: 100%;
-  //   width: 155rem;
   display: flex;
   align-items: center;
-  //   height: 50rem;
-  //   padding: 0 12rem;
   gap: 3rem;
   margin-bottom: 8rem;
 
@@ -17,10 +14,8 @@
 
   &__image {
     width: 40%;
-    // background-color: orangered;
     @include respond(desktop) {
       width: 100%;
-      //   padding: 0 8rem;
     }
 
     &_order {
@@ -30,7 +25,6 @@
 
   &__about {
     flex: 1;
-    // background-color: orange;
     padding: 1rem;
     @include respond(desktop) {
       width: 100%;

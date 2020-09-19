@@ -1,5 +1,7 @@
+@import "../../styles/abstract/variables";
+
 .Stack {
-  width: 124rem;
+  width: $width-content;
   text-align: center;
   padding: 3rem 0;
 

@@ -1,7 +1,6 @@
 @import "../styles/abstract/variables";
 @import "../styles/base/typography";
 @import "../styles/abstract/mixins";
-// @import "../styles/resets";
 // * ====== UNIVERSAL PROPERTIES ======
 
 * {
@@ -33,14 +32,7 @@ html {
 body {
   box-sizing: border-box;
   background-color: $color-bg;
-  // margin: 0;
-  // padding: 0;
 }
-
-// main {
-//   margin: 0;
-//   padding: 0;
-// }
 
 section {
   width: 100%;
@@ -50,32 +42,30 @@ section {
 #about {
   display: flex;
   justify-content: center;
-  margin-bottom: 4rem;
+  margin-bottom: $margin-section;
 }
 
 #mylife {
-  // display: flex;
-  // justify-content: center;
-  margin-bottom: 4rem;
+  margin-bottom: $margin-section;
 }
 
 #projects {
   width: 100%;
   display: flex;
   justify-content: center;
-  margin-bottom: 4rem;
+  margin-bottom: $margin-section;
 }
 
 #stack {
   width: 100%;
   display: flex;
   justify-content: center;
-  margin-bottom: 4rem;
+  margin-bottom: $margin-section;
 }
 
 #contacts {
   width: 100%;
   display: flex;
   justify-content: center;
-  margin-bottom: 4rem;
+  margin-bottom: $margin-section;
 }

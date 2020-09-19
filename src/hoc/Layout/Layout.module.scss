@@ -5,14 +5,11 @@
 .Layout {
   &__header {
     background-color: rgba($color: $color-nav-bg, $alpha: 0.95);
-    // background-color: $color-nav-bg;
     color: $color-white;
     width: 100%;
-    // height: 8rem;
     display: flex;
     justify-content: center;
     border-radius: 0 0 2rem 2rem;
-    // position: relative;
     position: absolute;
     top: 0;
     left: 0;
@@ -24,15 +21,11 @@
       display: block;
       position: absolute;
       transform: translateZ(-1px);
-      //   opacity: 0.7;
-      //   z-index: -1;
       top: 0;
       left: 0;
       border-radius: 0 0 1.5rem 1.5rem;
 
-      //   width: $rainbow-width;
       width: 100%;
-      //   height: $rainbow-height;
       height: calc(100% + 0.5rem);
 
       background: linear-gradient(
@@ -53,14 +46,11 @@
   }
   &__footer {
     background-color: rgba($color: $color-nav-bg, $alpha: 0.95);
-    // background-color: $color-nav-bg;
     color: $color-white;
     width: 100%;
-    // height: 8rem;
     display: flex;
     justify-content: center;
     border-radius: 0 0 2rem 2rem;
-    // position: relative;
     position: relative;
     bottom: 0;
     left: 0;
@@ -73,16 +63,11 @@
       content: "";
       display: block;
       position: absolute;
-      // transform: translateZ(1px);
-      //   opacity: 0.7;
-      //   z-index: -1;
       bottom: 0;
       left: 0;
       border-radius: 1.5rem 1.5rem 0 0;
 
-      //   width: $rainbow-width;
       width: 100%;
-      //   height: $rainbow-height;
       height: calc(100% + 0.5rem);
 
       background: linear-gradient(

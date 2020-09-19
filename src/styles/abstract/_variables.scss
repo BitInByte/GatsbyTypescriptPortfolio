@@ -30,3 +30,12 @@ $color-linkedin: #007bb5;
 $color-github: #24292e;
 
 // * SIZINGS
+$width-content: 124rem;
+$margin-section: 4rem;
+
+// * STYLING
+$shadow-button: 0px 0px 16px 1px
+  rgba(
+    $color: $color-button,
+    $alpha: 0.75,
+  );

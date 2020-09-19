@@ -3,18 +3,13 @@
 .Hero {
   width: 100vw;
   height: 100vh;
-
-  //   padding: 40rem 15rem;
   padding: 45vh 15rem;
-  //   display: flex;
-  //   justify-content: center;
   margin-bottom: 4rem;
 
   & div {
     font-size: 1.8rem;
     color: $color-white;
     margin-bottom: 1.45rem;
-    // font-weight: 700;
   }
 
   &__typewriter {
