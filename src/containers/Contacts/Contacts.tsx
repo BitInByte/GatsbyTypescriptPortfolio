@@ -25,6 +25,7 @@ type query = {
         email: string
         twitter: string
         instagram: string
+        linkedin: string
         website: string
         github0: string
         github1: string
@@ -47,6 +48,7 @@ const Contacts: React.FC<Props> = props => {
               email
               twitter
               instagram
+              linkedin
               website
               github0
               github1
@@ -107,7 +109,7 @@ const Contacts: React.FC<Props> = props => {
           </SocialButton>
         </a>
         <a
-          href={site.siteMetadata.social.instagram}
+          href={site.siteMetadata.social.linkedin}
           aria-label="Linkedin"
           target="_blank"
           rel="noopener noreferrer"

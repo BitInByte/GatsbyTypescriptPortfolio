@@ -27,6 +27,7 @@ This is the list of **stack** and **technologies** that I've been exploring and 
 - Styled Components (React)
 - CSS/SASS Modules (React)
 - Redux (React)
+- NodeJS
 
 <!-- **Backend** -->
 

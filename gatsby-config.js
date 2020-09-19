@@ -9,6 +9,7 @@ module.exports = {
       email: "contact@jopecodes.com",
       twitter: "https://twitter.com/BitInByte2",
       instagram: "https://instagram.com/bitinbyte",
+      linkedin: "https://www.linkedin.com/in/jopecodes",
       github0: "https://github.com/BitInByte",
       github1: "https://github.com/JayFoxFoxy",
     },
