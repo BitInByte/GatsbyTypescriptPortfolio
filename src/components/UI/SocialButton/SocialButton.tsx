@@ -1,8 +1,6 @@
 //Import libraries
 import React from "react"
 
-//Import components
-
 //Import scoped class modules
 //@ts-ignore
 import classes from "./SocialButton.module.scss"

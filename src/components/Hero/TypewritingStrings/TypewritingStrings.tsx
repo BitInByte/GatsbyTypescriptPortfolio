@@ -1,11 +1,8 @@
 //Import libraries
 import React from "react"
+
+// @ts-ignore
 import Typewriter from "typewriter-effect"
-
-//Import components
-
-//Import scoped class modules
-//import classes from './TypewritingStrings.module.css';
 
 //Props interface
 interface Props {

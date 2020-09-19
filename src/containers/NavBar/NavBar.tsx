@@ -1,5 +1,4 @@
 import React, { useState } from "react"
-// import { PageProps } from "gatsby"
 
 // Import components
 import Signature from "../../components/Signature/Signature"
@@ -13,8 +12,6 @@ import classes from "./NavBar.module.scss"
 
 interface navbarProps {}
 
-// const navBar: React.FC<PageProps<navbarProps>> = () => {
-// const navBar: React.FC<PageProps> = () => {
 const navBar: React.FC<navbarProps> = () => {
   const [sideBarOpen, setSideBarOpen] = useState<boolean>(false)
 

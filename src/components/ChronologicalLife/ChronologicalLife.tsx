@@ -23,26 +23,6 @@ const chronologicalLife: React.FC<Props> = ({ years, click }) => (
     {years.map(year => (
       <Year key={year} year={year} yearClick={click} />
     ))}
-    {/* <Year year="1999" />
-    <Year year="1999" />
-    <Year year="1999" />
-    <Year year="1999" />
-    <Year year="1999" />
-    <Year year="1999" />
-    <Year year="1999" />
-    <Year year="1999" />
-    <Year year="1999" />
-    <Year year="1999" />
-    <Year year="1999" />
-    <Year year="1999" />
-    <Year year="1999" />
-    <Year year="1999" />
-    <Year year="1999" />
-    <Year year="1999" />
-    <Year year="1999" />
-    <Year year="1999" />
-    <Year year="1999" />
-    <Year year="1999" /> */}
   </div>
 )
 

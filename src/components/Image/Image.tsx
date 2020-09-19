@@ -16,20 +16,6 @@ interface Props {
 
 //Stateless component
 const Image: React.FC<Props> = ({ imagePath }) => {
-  //   let img: JSX.Element | null = null
-
-  // const data = useStaticQuery(
-  //     graphql`
-  //   query($imagePath: ${imagePath}) {
-  //     placeholderImage: file(relativePath: { eq: $imagePath }) {
-  //       childImageSharp {
-  //         fluid(maxWidth: 1000, quality: 80) {
-  //           ...GatsbyImageSharpFluid
-  //         }
-  //       }
-  //     }
-  //   }
-  // `)
   return (
     <div className={classes.Image}>
       <div className={classes.Image__wrapper}>
@@ -58,7 +44,6 @@ const Image: React.FC<Props> = ({ imagePath }) => {
               const image = images.edges.find(
                 image => image.node.relativePath === imagePath
               )
-              //   console.log(image)
 
               if (!image) {
                 return null
@@ -73,10 +58,6 @@ const Image: React.FC<Props> = ({ imagePath }) => {
             }}
           />
         }
-        {/* <Img
-          className={classes.Image__img}
-          fluid={data.placeholderImage.childImageSharp.fluid}
-        /> */}
       </div>
     </div>
   )

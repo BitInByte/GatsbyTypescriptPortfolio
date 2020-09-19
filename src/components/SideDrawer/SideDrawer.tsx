@@ -5,6 +5,7 @@ import React from "react"
 import NavItems from "../NavItems/NavItems"
 
 //Import scoped class modules
+// @ts-ignore
 import classes from "./SideDrawer.module.scss"
 
 //Props interface

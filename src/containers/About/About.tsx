@@ -4,7 +4,6 @@ import { graphql, useStaticQuery } from "gatsby"
 
 //Import components
 import Title from "../../components/UI/Typography/Title/Title"
-// import Marker from "../../components/UI/Typography/Marker/Marker"
 import Button from "../../components/UI/Button/Button"
 
 //Import scoped class modules
@@ -49,8 +48,6 @@ const About: React.FC<Props> = () => {
     }
   `)
 
-  console.log(data)
-
   return (
     <div className={classes.About}>
       <Title text={data.allMarkdownRemark.edges[0].node.frontmatter.title} />
@@ -59,9 +56,7 @@ const About: React.FC<Props> = () => {
         dangerouslySetInnerHTML={{
           __html: data.allMarkdownRemark.edges[0].node.html,
         }}
-      >
-        {/* {data.allMarkdownRemark.edges[0].node.html} */}
-      </div>
+      ></div>
       <Button text="Resume" />
     </div>
   )

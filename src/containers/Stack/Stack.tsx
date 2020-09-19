@@ -40,10 +40,6 @@ const Stack: React.FC<Props> = props => {
     }
   `)
 
-  console.log("STACK")
-
-  console.log(data)
-
   return (
     <div className={classes.Stack}>
       <Title text="Stack & Teachnologies" />

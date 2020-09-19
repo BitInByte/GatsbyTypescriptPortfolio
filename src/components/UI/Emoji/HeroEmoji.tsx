@@ -2,8 +2,6 @@
 import React from "react"
 import { useSpring, animated } from "react-spring"
 
-//Import components
-
 //Import scoped class modules
 //@ts-ignore
 import classes from "./HeroEmoji.module.scss"
@@ -11,7 +9,6 @@ import classes from "./HeroEmoji.module.scss"
 //Props interface
 interface Props {
   label?: string
-  //   symbol: string
   children: string
 }
 
@@ -26,23 +23,6 @@ const heroEmoji: React.FC<Props> = ({ children, label }) => {
     },
     reset: true,
   })
-  // const props = useSpring({
-  //   from: { transform: "scale(1) rotate(0)" },
-  //   to: async (next, delay) => {
-  //     while (1) {
-  //       await next({ transform: "scale(1.3)" })
-  //       await next({ transform: "rotate(20)" })
-  //       await next({ transform: "rotate(-20)" })
-  //       await next({ transform: "rotate(20)" })
-  //       await next({ transform: "rotate(-20)" })
-  //       await next({ transform: "rotate(20)" })
-  //       await next({ transform: "rotate(-20)" })
-  //       await next({ transform: "rotate(20)" })
-  //       await next({ transform: "scale(1) rotate(0)" })
-  //       await delay(2000)
-  //     }
-  //   },
-  // })
 
   return (
     <animated.span
@@ -50,7 +30,6 @@ const heroEmoji: React.FC<Props> = ({ children, label }) => {
       aria-label={label ? label : ""}
       aria-hidden={label ? "false" : "true"}
       className={classes.HeroEmoji}
-      // style={props}
       style={{
         transform: x
           .interpolate({

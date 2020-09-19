@@ -57,8 +57,6 @@ const Contacts: React.FC<Props> = props => {
     `
   )
 
-  console.log(site.siteMetadata.social)
-
   return (
     <div className={classes.Contacts}>
       <Title text="Contacts & Socials" />

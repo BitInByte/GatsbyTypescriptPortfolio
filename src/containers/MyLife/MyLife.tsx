@@ -1,8 +1,6 @@
 //Import libraries
 import React, { useState } from "react"
 import { graphql, useStaticQuery } from "gatsby"
-import VisibilitySensor from "react-visibility-sensor"
-import { Spring } from "react-spring/renderprops"
 
 //Import components
 import Title from "../../components/UI/Typography/Title/Title"
@@ -16,15 +14,8 @@ import classes from "./MyLife.module.scss"
 // Types
 import { auxObjType } from "../../types"
 
-// const Years = ["1998", "2000", "2003", "2006", "2011", "2015"]
-// const Years = ["1998", "2000", "2003", "2006", "2011", "2015"]
-
 // Types
 type yearState = null | string
-// type auxObjType = {
-//   date: string
-//   html: string
-// } | null
 
 type dataBlockType = {
   node: { frontmatter: { date: number }; html: string }
@@ -68,14 +59,7 @@ const MyLife: React.FC<Props> = props => {
     }
   `)
 
-  console.log(data)
-
-  // const [isVisible, setIsVisible] = useState(false)
-
-  // console.log(isVisible)
-
   const [selectedYear, setSelectedYear] = useState<yearState>(null)
-  //   const [yearData, setYearData] = useState(null)
 
   const Years: string[] = []
 
@@ -83,16 +67,10 @@ const MyLife: React.FC<Props> = props => {
     Years.push(item.node.frontmatter.date.toString())
   })
 
-  console.log(Years)
-
-  console.log(selectedYear)
-  //   console.log(yearData)
-
   const yearClickHandler = (
     _: React.MouseEvent<HTMLSpanElement, MouseEvent>,
     year: string
   ) => {
-    console.log(year)
     setSelectedYear(year)
   }
 
@@ -103,10 +81,6 @@ const MyLife: React.FC<Props> = props => {
       item => item.node.frontmatter.date.toString() === selectedYear
     )
 
-    console.log("@@@@@Result")
-
-    console.log(result)
-
     const dataBlock: dataBlockType = data.allMarkdownRemark.edges.filter(
       item => item.node.frontmatter.date.toString() === selectedYear
     )
@@ -115,31 +89,9 @@ const MyLife: React.FC<Props> = props => {
       date: dataBlock[0].node.frontmatter.date.toString(),
       html: dataBlock[0].node.html,
     }
-
-    console.log(auxObj)
-
-    // setYearData(auxObj)
   }
 
   return (
-    // <>
-    //   <VisibilitySensor partialVisibility>
-    //     {({ isVisible }) => (
-    //       <Spring delay={100} to={{ opacity: isVisible ? 1 : 0 }}>
-    //         {({ opacity }) => (
-    //           <div className={classes.MyLife} style={opacity}>
-    //             <Title text="My Life" />
-    //             <div className={classes.MyLife__lifeWrapper}>
-    //               <ChronologicalLife years={Years} click={yearClickHandler} />
-    //               <div className={classes.MyLife__content}>
-    //                 <LifeContent yearData={auxObj} />
-    //               </div>
-    //             </div>
-    //           </div>
-    //         )}
-    //       </Spring>
-    //     )}
-    //   </VisibilitySensor>
     <div className={classes.MyLife}>
       <Title text="My Life" />
       <div className={classes.MyLife__lifeWrapper}>
@@ -149,7 +101,6 @@ const MyLife: React.FC<Props> = props => {
         </div>
       </div>
     </div>
-    // </>
   )
 }
 

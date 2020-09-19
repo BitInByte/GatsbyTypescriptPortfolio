@@ -35,7 +35,6 @@ const Project: React.FC<Props> = ({ projectData, changePosition }) => {
   return (
     <div className={classes.Project}>
       <div className={imageClass.join(" ")}>
-        {/* <Image imagePath="experience.png" /> */}
         <a
           href={projectData.liveLink}
           aria-label="Project Image"

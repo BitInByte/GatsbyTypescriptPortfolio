@@ -79,18 +79,12 @@ const Projects: React.FC<Props> = props => {
     })
   })
 
-  console.log(data)
-  console.log(projectsData)
-
   return (
     <div className={classes.Projects}>
       <Title text="Projects" />
       <div className={classes.Projects__content}>
         {projectsData.map((item, index) => {
           if (index % 2 === 0) {
-            console.log(index)
-
-            console.log(true)
             return (
               <Project
                 key={item.projectNr}
@@ -108,7 +102,6 @@ const Projects: React.FC<Props> = props => {
             )
           }
         })}
-        {/* <Project/> */}
       </div>
     </div>
   )

@@ -1,5 +1,4 @@
 import React from "react"
-// import { PageProps } from "gatsby"
 
 // Import components
 import SEO from "../../hoc/Seo/Seo"

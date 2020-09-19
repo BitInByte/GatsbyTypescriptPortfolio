@@ -1,8 +1,5 @@
 //Import libraries
 import React from "react"
-import { PageProps } from "gatsby"
-
-//Import components
 
 //Import scoped class modules
 // @ts-ignore
@@ -18,20 +15,15 @@ interface sideDrawerButtonProps {
           prevState: boolean
         ) => boolean)
   ) => void
-  // clickHandler: React.Dispatch<React.SetStateAction<boolean>>
 }
 
 //Stateless component
-// const sideDrawerButton: React.FC<sideDrawerButtonProps> = ({
 const sideDrawerButton: React.FC<sideDrawerButtonProps> = ({
   clickHandler,
 }: sideDrawerButtonProps) => (
-  //   <button className={classes.SideDrawerButton} onClick={clickHandler}>
   <button
     className={classes.SideDrawerButton}
     onClick={clickHandler.bind(null)}
-    // onClick={clickHandler}
-    // onClick={() => console.log("Im here")}
   >
     <div className={classes.SideDrawerButton__line}></div>
     <div className={classes.SideDrawerButton__line}></div>

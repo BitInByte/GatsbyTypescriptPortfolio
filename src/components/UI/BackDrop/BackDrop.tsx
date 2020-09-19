@@ -1,17 +1,13 @@
 //Import libraries
 import React from "react"
 
-//Import components
-
 //Import scoped class modules
 // @ts-ignore
 import classes from "./BackDrop.module.scss"
 
 //Props interface
 interface backDropProps {
-  // clickHandler: (value: boolean) => void
   clickHandler: () => void
-  //   clickHandler: React.Dispatch<React.SetStateAction<boolean>>
 }
 
 //Stateless component

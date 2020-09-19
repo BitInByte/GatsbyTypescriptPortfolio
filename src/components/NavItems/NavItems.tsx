@@ -1,7 +1,6 @@
 // Import packages
 import React from "react"
 import { useSpring, animated, config } from "react-spring"
-// import { Link } from "gatsby"
 
 // Import components
 import NavItem from "./NavItem/NavItem"
@@ -47,8 +46,6 @@ const navItems: React.FC<navItemsProps> = ({
   const navClasses: navBarClasses = [classes.NavBar]
   if (isSideDrawerOpen) navClasses.push(classes.NavBar__sideDrawer)
 
-  // TODO Change this to useTrail to animate it one by one https://codesandbox.io/embed/zn2q57vn13
-
   const props = useSpring({
     from: {
       transform: "translateY(-30px)",
@@ -64,19 +61,8 @@ const navItems: React.FC<navItemsProps> = ({
     },
   })
 
-  // const trail = useTrail(Links.length, {
-  //   config: {
-  //     ...config.wobbly,
-  //     duration: 300,
-  //   },
-  //   from: { transform: "translateY(-30px)", opacity: 0 },
-  //   to: { transform: "translateY(0)", opacity: 1 },
-  // })
-
   return (
-    // <nav className={classes.NavBar}>
     <animated.nav style={props} className={navClasses.join(" ")}>
-      {/* <animated.nav className={navClasses.join(" ")}> */}
       <ul>
         {Links.map(item => (
           <NavItem
@@ -86,11 +72,6 @@ const navItems: React.FC<navItemsProps> = ({
             clickHandler={clickHandler && clickHandler}
           />
         ))}
-        {/* <li>About Me</li>
-        <li>My Life</li>
-        <li>My Stack</li>
-        <li>My Projects</li>
-        <li>Contacts</li> */}
       </ul>
     </animated.nav>
   )
