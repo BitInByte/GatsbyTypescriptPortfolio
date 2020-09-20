@@ -15,8 +15,6 @@ interface navbarProps {}
 const navBar: React.FC<navbarProps> = () => {
   const [sideBarOpen, setSideBarOpen] = useState<boolean>(false)
 
-  console.log(sideBarOpen)
-
   const backDropHandler = () => {
     setSideBarOpen(false)
   }
