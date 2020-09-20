@@ -1,5 +1,6 @@
 ---
 title: "About Me"
+resume: "resume.pdf"
 ---
 
 Hello, nice to meet you!

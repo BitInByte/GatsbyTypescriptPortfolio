@@ -1,6 +1,6 @@
 //Import libraries
 import React from "react"
-import { graphql, useStaticQuery } from "gatsby"
+import { graphql, useStaticQuery, withPrefix } from "gatsby"
 
 //Import components
 import Title from "../../components/UI/Typography/Title/Title"
@@ -18,6 +18,7 @@ type query = {
         node: {
           frontmatter: {
             title: string
+            resume: string
           }
           html: any
         }
@@ -40,6 +41,7 @@ const About: React.FC<Props> = () => {
           node {
             frontmatter {
               title
+              resume
             }
             html
           }
@@ -47,6 +49,8 @@ const About: React.FC<Props> = () => {
       }
     }
   `)
+
+  // const resumePath = `https://www.jopecodes.com/${data.allMarkdownRemark.edges[0].node.frontmatter.resume}`
 
   return (
     <div className={classes.About}>
@@ -57,7 +61,16 @@ const About: React.FC<Props> = () => {
           __html: data.allMarkdownRemark.edges[0].node.html,
         }}
       ></div>
-      <Button text="Resume" />
+      <a
+        href={withPrefix(
+          data.allMarkdownRemark.edges[0].node.frontmatter.resume
+        )}
+        // href={resumePath}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <Button text="Resume" />
+      </a>
     </div>
   )
 }
