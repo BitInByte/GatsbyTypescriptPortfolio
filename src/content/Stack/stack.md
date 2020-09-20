@@ -28,6 +28,7 @@ This is the list of **stack** and **technologies** that I've been exploring and 
 - CSS/SASS Modules (React)
 - Redux (React)
 - NodeJS
+- Netlify
 
 <!-- **Backend** -->
 
