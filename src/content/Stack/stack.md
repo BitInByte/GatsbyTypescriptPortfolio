@@ -2,7 +2,7 @@
 title: "Stack"
 ---
 
-This is the list of **stack** and **technologies** that I've been exploring and working lately and that I feel more confortable with:
+This is the list of **stack** and **technologies** that I've been exploring and working lately and that I feel more comfortable with:
 
 <!-- **Languages and frameworks** -->
 

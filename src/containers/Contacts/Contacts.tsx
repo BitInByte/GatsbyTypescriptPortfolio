@@ -64,8 +64,8 @@ const Contacts: React.FC<Props> = props => {
       <Title text="Contacts & Socials" />
       <div className={classes.Contacts__content}>
         <p>
-          Now that you know a bit more about me, if you wanna get in touch with
-          me, you can either use my social networks or drop me an email:
+          Now that you know a bit more about me, if you want to get in touch
+          with me, you can either use my social networks or drop me an email:
         </p>
         <p>
           <strong>
