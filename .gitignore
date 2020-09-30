@@ -76,3 +76,6 @@ structure.txt
 
 #idea
 .idea/
+
+#backend
+.firebase
