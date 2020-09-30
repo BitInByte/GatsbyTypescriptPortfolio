@@ -12,6 +12,7 @@ This is the list of **stack** and **technologies** that I've been exploring and 
 - CSS3
 - JavaScript
 - Typescript
+- jQuery
 - ReactJs
 - Gatsby
 - Python
