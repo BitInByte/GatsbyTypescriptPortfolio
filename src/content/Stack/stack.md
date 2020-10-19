@@ -37,10 +37,12 @@ This is the list of **stack** and **technologies** that I've been exploring and 
 
 - Firebase
 - SQL
+- NoSQL
 
 <!-- **Software & editors** -->
 
 ###Software & editors
+
 - Webstorm
 - Vim
 - VSCode
@@ -50,13 +52,13 @@ This is the list of **stack** and **technologies** that I've been exploring and 
 <!-- **BrainStorming tools:** -->
 
 ###BrainStorming tools:
+
 - Trello
 - Lucidchart
 - Coggle
 - OneNote
 - ClickUp
-	
-	
+
 To check all of my work and projects you can visit both of my github accounts. I made 2 accounts just to divide what is school projects and what is self-taught projects.
 [WebDev account](https://github.com/BitInByte),
 [Old account with some school and unfinished projects](https://github.com/JayFoxFoxy)

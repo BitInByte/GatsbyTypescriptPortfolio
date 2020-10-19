@@ -6,7 +6,6 @@ module.exports = {
   siteMetadata: {
     // title: `Gatsby Default Starter`,
     title: `JoPeCodes | Personal Portfolio`,
-    // description: `My personal porfolio talking a bit about me and all of my projects`,
     description: `Hello, my name is Joao Pedro and I am a Web Developer aspiring to be full-stack and software developer`,
     author: `João Pedro`,
     social: {
